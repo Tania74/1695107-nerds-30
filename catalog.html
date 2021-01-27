@@ -4,11 +4,15 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс/Каталог</title>
+    <link rel="icon" href="favicon.ico">
+<link rel="icon" href="img/icon.svg" type="img/svg+xml">
+<link rel="apple-touch-icon" href="apple.png">
+<link rel="manifest" href="manifest.webmanifest">
   </head>
   <body>
     <header class="main-header">
         <nav>
-        <a href="index.html"><img src="https://via.placeholder.com/150x100" alt="Логотип NЁRDS"></a>
+        <a href="index.html"><img src="img/catalog/nerds-logo.svg"width="159.94" height="65.13" alt="Логотип NЁRDS"></a>
         <ul>
          <li><a href="blank.html">Студия</a></li>
          <li><a href="blank.html">Клиенты</a></li>
@@ -26,11 +30,11 @@
             <fieldset>
               <legend>Стоимость:</legend>
               <input type="range" id="price" min="0" max="15000" step="1" value="10000">
-              <!--Значение ползунка, не знаю как оформить-->
+              <!--Значение ползунка-->
             </fieldset>
             <fieldset>
               <legend>Сортировать:</legend>
-              <!--слайдер? тоже не знаю пока как оформить-->
+              <!--вставка-->
             </fieldset>
             <fieldset>
                 <legend>Сетка:</legend>
@@ -82,28 +86,28 @@
         <ul>
             <li> 
                 <!--Слайдер-->
-                <a href="blank.html"><img src="https://via.placeholder.com/150x100" alt="Седона"></a>
+                <a href="blank.html"><img src="img/catalog/img-sedona 1.jpg" width="359" height="578" alt="Седона"></a>
                 <h3>Sedona</h3>
         <p>Информационный сайт<br>
         для туристов</p>
         <button type="button">9900 ₽</button>
             </li> 
             <li>
-        <a href="catalog.html"><img src="https://via.placeholder.com/150x100" alt="Пинк"></a>   
+        <a href="catalog.html"><img src="img/catalog/img-pink 1.jpg" width="359" height="578" alt="Пинк"></a>   
         </li>
             <li>
-                <a href="catalog.html"><img src="https://via.placeholder.com/150x100" alt="Барбершоп Бородинский">  
+                <a href="catalog.html"><img src="img/catalog/img-barbershop 112.jpg" width="359" height="578" alt="Барбершоп Бородинский">  
                  </a>
                </li>
             <li>
-                <a href="catalog.html"><img src="https://via.placeholder.com/150x100" alt="Мишка">   
+                <a href="catalog.html"><img src="img/catalog/img-mishka 1.jpg" width="359" height="578"" alt="Мишка">   
                 </a>
                 </li>
             <li>
-                <a href="catalog.html"><img src="https://via.placeholder.com/150x100" alt="Аплюс"> 
+                <a href="catalog.html"><img src="img/catalog/img-aplus 1.jpg" width="359" height="578" alt="Аплюс"> 
                 </a>
                 </li>
-            <li><a href="catalog.html"><img src="https://via.placeholder.com/150x100" alt="Кваст"> 
+            <li><a href="catalog.html"><img src="img/catalog/img-kvast 1.jpg"width="359" height="578" alt="Кваст"> 
            </a>
             </li>       
         </ul>
@@ -152,18 +156,18 @@
   </p>
 </section>
   </footer>
-  
 <section>
-<h2>Форма обратной связи:</h2>
+<h2>Напишите нам:</h2>
 <p>Оставьте свои контактные данные для связи:</p>
 <form action="https://echo.htmlacademy.ru/" method="post">
-<input type="text" name="fio" id="fio-field" placeholder="Укажите ФИО">
-<input type="text" name="phone" id="phone-field" placeholder="Укажите номер телефона">
-<input type="text" name="email" id="email-field" placeholder="Укажите e-mail">
+<p>Ваше имя:</p>
+<p><input type="text" name="fio" id="fio-field" placeholder="Имя Фамилия"></p>
+<p>Ваш email:</p>
+<p><input type="text" name="phone" id="phone-field" placeholder="email@example.com"></p>
 </form>
 <form action="https://echo.htmlacademy.ru/courses" method="post">
-<!--Комментарий-->
-<textarea name="comment" id="comment-field" rows="2">Текст комментария</textarea>
+  <p>Текст письма:</p>
+<p><textarea name="comment" id="comment-field" rows="2" placeholder="В свободной форме"></textarea></p>
     <input type="submit" value="Отправить">
   </form>
 </section>
