@@ -1,88 +1,109 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
 <link rel="icon" href="img/icon.svg" type="img/svg+xml">
 <link rel="apple-touch-icon" href="apple.png">
 <link rel="manifest" href="manifest.webmanifest">
   </head>
-  <body>
+  <body class="page-body">
     <header class="main-header">
-     <nav>
-      <img src="img/nerds-logo.svg" width="160" height="49" alt="Логотип NЁRDS">
-     <ul>
+     <nav class="main-navigation">
+      <img class="main-header-logo" src="img/nerds-logo.svg" width="160" height="49" alt="Логотип NЁRDS">
+     <ul class="site-navigation">
       <li><a href="blank.html">Студия</a></li>
       <li><a href="blank.html">Клиенты</a></li>
       <li><a href="catalog.html">Магазин</a></li>
       <li><a href="blank.html">Контакты</a></li>
     </ul>
-    <a href="blank.html">Корзина</a>
+    <p class="basket-navigation">
+       <a  href="blank.html" >Корзина</a></p>
   </nav>
     </header>
-   <main>
+   <main class="container">
   <h1>Интернет магазин «Nerds»</h1>
-  <section>
+  <section class="features">
     <h2>Преимущества</h2>
-    <p>
-    <strong> Долго, дорого,<br>
-    Скрупулезно.
-    </strong>
-    </p> 
-    <p>Математически выверенный дизайн<br>
+    <div>
+    <p><strong class="main-feature"> Долго, дорого,<br>
+    Скрупулезно.</strong>
+    </p>
+    <p class="feature-preview">Математически выверенный дизайн<br>
     для вашего сайта или мобильного приложения.</p>
-    <a href="blank.html">Узнать больше</a>
-    <img src="img/phones.png" width="760" height="431" alt="Презентация Нёрдс-смартфоны">
-    <!--<img src="img/monitors.png" width="760" height="431" alt="Презентация Нёрдс-мониторы"> 
-    <img src="img/tablets.png" width="760" height="431" alt="Презентация Нёрдс-планшеты">-->
+    <a class="feature-button" href="blank.html">Узнать больше</a>
+  </div>
+    <img class="feature-img" src="img/phones.png" width="760" height="431" alt="Презентация Нёрдс-смартфоны">
+    <!--<strong>Любим математику,<br>
+    Как никто другой
+    <p></strong class="main-feature">
+    </p>
+    <p class="feature-preview">Никакого креатива, только математические формулы<br>
+    для расчета идеальных пропорций</p>
+    <a class="feature-button" href="blank.html">Узнать больше</a>
+      <img class="feature-img" src="img/monitors.png" width="760" height="431" alt="Презентация Нёрдс-мониторы">
+
+    <p><strong class="main-feature">Только ночь,<br>
+    только хардкор
+    </strong>
+    </p>
+    <p class="feature-preview">Работать днем, как все? Мы против этого.<br>
+    Ближе к полуночи работа только начинается.</p>
+    <a class="feature-button" href="blank.html">Узнать больше</a>
+    <img class="feature-img" src="img/tablets.png" width="760" height="431" alt="Презентация Нёрдс-планшеты">-->
   </section>
-  <section>
+  <section class="columns">
     <h2>Услуги</h2>
-    <ul><li>
-    <img src="img/webs.jpg" width="300" height="146" alt="ВЕБ-САЙТЫ">
-    <h3>ВЕБ-САЙТЫ</h3>
-    <p>Мир никогда не будет преждним<br>
+    <ul><li class="column-webs">
+    <img class="webs-img" src="img/webs.jpg" width="300" height="146" alt="ВЕБ-САЙТЫ">
+    <h3 class="webs">ВЕБ-САЙТЫ</h3>
+    <p class="webs-preview">Мир никогда не будет преждним<br>
     после того как увидит ваш сайт!</p>
-    <a href="#">Заказать</a>
+    <a class="webs-button" href="#">Заказать</a>
     </li>
-    <li>
-    <img src="img/apps.jpg" width="300" height="146" alt="ПРИЛОЖЕНИЯ">
-    <h3> ПРИЛОЖЕНИЯ</h3>
-    <p>Покорите топ-10 приложений<br>
+    <li class="column-apps">
+    <img class="apps-img" src="img/apps.jpg" width="300" height="146" alt="ПРИЛОЖЕНИЯ">
+    <h3 class="apps"> ПРИЛОЖЕНИЯ</h3>
+    <p class="apps-preview">Покорите топ-10 приложений<br>
     в AppStore и GoоglePlay</p>
-    <a href="#">Заказать</a>
+    <a class="apps-button" href="#">Заказать</a>
     </li>
-    <li>
-    <img src="img/presentations.jpg" width="300" height="146" alt="ПРЕЗЕНТАЦИИ">
-    <h3>ПРЕЗЕНТАЦИИ</h3>
-    <p>Вы даже не подозреваете<br>
+    <li class="column-presentations">
+    <img class="presentations-img" src="img/presentations.jpg" width="300" height="146" alt="ПРЕЗЕНТАЦИИ">
+    <h3 class="presentations" >ПРЕЗЕНТАЦИИ</h3>
+    <p class="presentations-preview" >Вы даже не подозреваете<br>
     насколько вы изумительны!</p>
-    <a href="#">Заказать</a>
+    <a class="presentations-button" href="#">Заказать</a>
     </li>
     </ul>
   </section>
-  <section class="about">
+  <section >
     <h2>О нас</h2>
-    <h2>Мы маленькая, но гордая<br>
+  <nav class="about">
+    <h2 class="main-about">Мы маленькая, но гордая<br>
    дизайн-студия из Краснодара.
     </h2>
-    <p>
+    <p class="content-about">
     Исповедуем принципы минимализма и частоты. Ставим математический расчет<br>
     превыше креатива. Работаем не покладая рук, как роботы.</p>
-    <h3>
+    <h3 class="about-body">
     Выполняем заказы на разработку:
     </h3>
-    <ul>
+    <ul class="about-list">
     <li> Веб-сайтов любой сложности</li>
     <li>Мобильных приложений для iOS и Android</li>
     <li>Слайдшоу и видео для корпоративных презентаций</li>
-    </ul> 
-    <img src="img/nerds-logo.png" width="360" height="208" alt="Логотип NЁRDS">
-    <p>
+    </ul>
+  </nav>
+  <nav class="about-content">
+    <img class="content-logo" src="img/nerds-logo.png" width="360" height="208" alt="Логотип NЁRDS">
+    <p class="content-aside">
     <b>С 2004 года любим точность во всем:</b>
-    </p> 
-    <table>
+    </p>
+    <table  class="about-section">
    <tr>
    <th>146<sup>%</sup></th>
    <th>100<sup>%</sup></th>
@@ -94,6 +115,7 @@
    <td>Минимальная<br>предоплата</td>
    </tr>
     </table>
+  </nav>
   </section>
   <section class="companies">
     <h2>Производители</h2>
@@ -114,20 +136,20 @@
   </section>
 </main>
     <footer class="main-footer">
-      <section>
+      <section class="footer-contacts">
   <h2>Как до нас добраться</h2>
-    <h3>NЁRDS DESIGN STUDIO</h3>
-    <p>
+    <h3 class="footer-name-nerds">NЁRDS DESIGN STUDIO</h3>
+    <p class="footer-address">
       191186, Санкт-Петербург,<br>
       ул. Б.Конюшенная, д.19/8
       <br>
-      <a href="tel:+78122757575"> тел.+7 (812) 275-75-75</a>
+      <a class="footer-phone" href="tel:+78122757575"> тел.+7 (812) 275-75-75</a>
     </p>
-    <a href="blank.html">НАПИШИТЕ НАМ</a>
+    <a class="footer-button" href="blank.html">НАПИШИТЕ НАМ</a>
   </section>
-  <section>
+  <section class="footer-social">
     <h2> Социальные сети</h2>
-    <ul>
+    <ul class="social-list">
       <li>
         <a href="#">Вконтакте</a>
       </li>
@@ -138,24 +160,33 @@
         <a href="#">Инстаграм</a>
       </li>
     </ul>
-    <p><strong> Давайте дружить, это выгодно!</strong></p>
-    <p>
+    <nav class="footer-section" >
+      <p class="footer-desc" ><strong> Давайте дружить, это выгодно!</strong></p>
+    <p class="discount">
     Скидка 10% для друзей из социальных сетей.
     </p>
+    </nav>
   </section>
     </footer>
-<section>
-  <h2>Напишите нам:</h2>
+<section class="modal" >
+  <h2 class="main-modal">Напишите нам:</h2>
   <form action="https://echo.htmlacademy.ru/" method="post">
-  <p>Ваше имя:</p>
-  <p><input type="text" name="fio" id="fio-field" placeholder="Имя Фамилия"></p>
-  <p>Ваш email:</p>
-  <p><input type="text" name="email" id="email-field" placeholder="email@example.com"></p>
-  </form>
+  <nav class="modal-name">
+    <h3>Ваше имя:</h3>
+  <p><input class="modal-name-input" type="text" name="fio" id="fio-field" placeholder="Имя Фамилия"></p>
+  </nav>
+  <nav class="modal-email">
+  <h3>Ваш email:</h3>
+  <p><input class="modal-email-input"  name="email" id="email-field" placeholder="email@example.com"></p>
+  </nav>
+</form>
   <form action="https://echo.htmlacademy.ru/courses" method="post">
-    <p>Текст письма:</p>
-  <p><textarea name="comment" id="comment-field" rows="2" placeholder="В свободной форме"></textarea></p>
-      <input type="submit" value="Отправить">
+    <nav class="modal-comment">
+      <h3>Текст письма:</h3>
+  <p><textarea class="comment" name="comment" id="comment-field" rows="2" placeholder="В свободной форме"></textarea></p>
+     </nav>
+    <input class="modal-button" type="submit" value="Отправить">
+
     </form>
   </section>
   </body>
