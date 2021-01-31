@@ -141,8 +141,8 @@ img {
 }
 
 .feature-button:focus {
- background-color: var(--medium-red);
- color: var(--dark-white);
+ background-color: var(--dark-red);
+ color: var(--basic-white);
  /* opacity: 0.3; */
 }
 
@@ -170,16 +170,20 @@ list-style: none;
   text-align: center;
  background-color: var(--basic-red);
  color: var(--basic-white);
+border-radius: 3px;
 }
 
- .webs-button:hover{
+ .webs-button:hover {
    background-color: var(--medium-red);
    color: var(--basic-white);
  }
-    .webs-button:focus {
+  .webs-button:focus {
  background-color: var(--dark-red);
- color: var(--basic-white);
- /* opacity: 0.3; */
+color: var(--basic-white);
+mix-blend-mode: normal;
+/* opacity: 0.3; */
+box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+
 }
 
  .apps-button {
@@ -190,6 +194,7 @@ list-style: none;
   text-align: center;
  background-color: var(--basic-green);
  color: var(--basic-white);
+border-radius: 3px;
 }
 
  .apps-button:hover{
@@ -199,7 +204,10 @@ list-style: none;
     .apps-button:focus {
  background-color: var(--dark-green);
  color: var(--basic-white);
- /* opacity: 0.3; */
+ mix-blend-mode: normal;
+/* opacity: 0.3; */
+box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+
 }
 
  .presentations-button {
@@ -210,6 +218,7 @@ list-style: none;
   text-align: center;
  background-color: var(--basic-yellow);
  color: var(--basic-white);
+border-radius: 3px;
 }
 
  .presentations-button:hover{
@@ -219,7 +228,10 @@ list-style: none;
  .presentations-button:focus {
  background-color: var(--dark-yellow);
  color: var(--basic-white);
- /* opacity: 0.3; */
+ mix-blend-mode: normal;
+/* opacity: 0.3; */
+box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+
 }
  /*  about  */
  .main-about {
@@ -302,7 +314,7 @@ line-height: 22px;
  color: var(--name-dark-gray);
 }
 
-/* modal */
+
 /* modal */
 .modal{
 background-color: var(--basic-white);
