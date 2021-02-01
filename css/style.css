@@ -120,7 +120,6 @@ img {
   font-size: 55px;
   line-height: 55px;
   color: var(--basic-black);
-  background-color: var(--light-gray);
   font-weight: 500;
 }
 .feature-preview {
