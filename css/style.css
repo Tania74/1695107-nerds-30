@@ -46,7 +46,10 @@
   --border-light-gray: #D7DCDE;
   --name-dark-gray: #444444;
   --light-gray: #EEEEEE;
-}
+  --cilver:#D5D5D5;
+  --cilver-medium: #DFDFDF;
+  --cilver-dark:#DBDBDB;
+ }
 
 /* Global*/
 
@@ -334,77 +337,245 @@ line-height: 22px;
 
 /* modal */
 .modal{
-background-color: var(--basic-white);
-background-position: 0 0;
-}
+  background-color: var(--basic-white);
+  background: var(--basic-white);
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+  background-position: 0 0;
+  }
 
-.main-modal {
-  font-family: "RobotoBold", sans-serif;
-  font-size: 45px;
-line-height: 53px;
- color: var(--basic-black);
- font-weight: 700;
-}
-.modal h3 {
-  font-family: "RobotoBold", sans-serif;
-  font-size: 17px;
-line-height: 18px;
- color: var(--basic-black);
- font-weight: 700;
-}
+  .main-modal {
+    font-size: 45px;
+  line-height: 53px;
+   color: var(--basic-black);
+   font-weight: 700;
+  }
+  .modal h3 {
+    font-size: 17px;
+  line-height: 18px;
+   color: var(--basic-black);
+   font-weight: 700;
+  }
 
- .comment,
- .modal-name-input,
- .modal-email-input {
- background-color: var(--basic-white);
-border: 2px solid  var(--border-light-gray);
-box-sizing: border-box;
-border-radius: 3px;
-font-size: 16px;
-line-height: 18px;
- color: var(--name-dark-gray);
- mix-blend-mode: normal;
- opacity: 0.5;
- }
-
- .comment:hover,
- .modal-name-input:hover,
- .modal-email-input:hover {
- color: var(--name-dark-gray);
- border: 2px solid var(--border-gray);
- mix-blend-mode: normal;
- opacity: 0.5;
- }
-
-.comment:focus,
- .modal-name-input:focus,
- .modal-email-input:focus {
- color: var(--name-dark-gray);
- border: 2px solid var(--basic-black);
- box-sizing: border-box;
+   .comment,
+   .modal-name-input,
+   .modal-email-input {
+   background-color: var(--basic-white);
+  border: 2px solid  var(--border-light-gray);
+  box-sizing: border-box;
   border-radius: 3px;
+  font-size: 16px;
+  line-height: 18px;
+   color: var(--name-dark-gray);
+   mix-blend-mode: normal;
+   opacity: 0.5;
+   }
+
+   .comment:hover,
+   .modal-name-input:hover,
+   .modal-email-input:hover {
+   color: var(--name-dark-gray);
+   border: 2px solid var(--border-gray);
+   mix-blend-mode: normal;
+   opacity: 0.5;
+   }
+
+  .comment:focus,
+   .modal-name-input:focus,
+   .modal-email-input:focus {
+   color: var(--name-dark-gray);
+   border: 2px solid var(--basic-black);
+   box-sizing: border-box;
+    border-radius: 3px;
+   }
+
+   .modal-button {
+     font: inherit;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    text-align: center;
+   background-color: var(--basic-red);
+   color: var(--basic-white);
+   border: 0;
+  }
+
+   .modal-button:hover{
+     background-color: var(--medium-red);
+     color: var(--basic-white);
+   }
+      .modal-button:focus {
+   background-color: var(--dark-red);
+   color: var(--basic-white);
+   /* opacity: 0.3; */
+  }
+
+
+
+/* index */
+.main-page {
+  font-family: "RobotoMedium", sans-serif;
+   font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  text-align: center;
+ background-color: var(--light-gray);
+ color: var(--basic-black);
+}
+  /* filter */
+
+legend {
+  font-family: "RobotoBold", sans-serif;
+   font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+ color: var(--basic-black);
+ text-transform: uppercase;
  }
 
- .modal-button {
+.slider {
+  background-color: var(--light-gray);
+}
+.filter-list {
+  font-size: 16px;
+line-height: 19px;
+color: var(--dark-gray);
+}
+
+.filter-list:disabled {
+  opacity: 0.3;
+}
+.look-filter-list {
+  list-style: none;
+  }
+
+.look-filter-list-item {
+list-style: none;
+color: var(--basic-black);
+font-size: 14px;
+line-height: 18px;
+opacity: 0.3;
+align-items: center;
+text-transform: uppercase;
+color: var(--basic-black);
+
+}
+.look-filter-list-item:hover {
+  color: var(--basic-black);
+    opacity: 0.6;
+}
+
+.look-filter-list-item:focus,
+.look-filter-list-item:active
+ {
+ color: var(--basic-black);
+ opacity: 1;
+ }
+
+.filter-button {
   font-family: "RobotoMedium", sans-serif;
   text-transform: uppercase;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
   text-align: center;
- background-color: var(--basic-red);
- color: var(--basic-white);
- border-radius: 3px;
+ background-color: var(--light-gray);
+ color: var(--basic-black);
+ border:none;
+border-radius: 3px;
 }
 
- .modal-button:hover{
+.filter-button:hover {
+background: var(--background-gray);
+border:none;
+}
+
+.filter-button:focus,
+.filter-button:active {
+background: var(--cilver);
+opacity: 0.3;
+border:none;
+}
+
+/* catalog */
+
+.catalog-list {
+  list-style: none;
+}
+.catalog-item {
+background: var(--basic-white);
+border-radius: 5px;
+}
+.catalog-item-modal {
+  background-color: var(--light-gray);
+  text-align: center;
+}
+ .catalog-name {
+  font-family: "RobotoBold", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+ color: var(--basic-black);
+   text-transform: uppercase;
+}
+.catalog-name:hover {
+  color: var(--basic-red)
+}
+.catalog-name:focus {
+ color: var(--basic-black)
+mix-blend-mode: normal;
+opacity: 0.3;
+}
+
+.catalog-item-modal p{
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--medium-gray)
+}
+
+.catalog-item-modal button{
+  font-family: "RobotoMedium", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  text-align: center;
+ background-color: var(--basic-red);
+ color: var(--basic-white);
+}
+
+ .catalog-item-modal button:hover{
    background-color: var(--medium-red);
    color: var(--basic-white);
-
  }
-    .modal-button:focus {
+   .catalog-item-modal button:focus {
  background-color: var(--dark-red);
  color: var(--basic-white);
-
  /* opacity: 0.3; */
+}
+
+.page-number {
+list-style: none;
+}
+
+.page-number a {
+font-family: "RobotoMedium", sans-serif;
+list-style: none;
+border-radius: 3px;
+background-color: var(--light-gray);
+color: var(--basic-black);
+font-weight: 500;
+}
+.page-number a:hover {
+background-color: var(--cilver-medium);
+
+}
+.page-number a:focus {
+background-color: var(--cilver);
+box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+
+}
+.page-number a:active {
+  background: rgba(0, 0, 0, 0.0001);
+  border: 3px solid var(--cilver-medium);
+  box-sizing: border-box;
+
 }
