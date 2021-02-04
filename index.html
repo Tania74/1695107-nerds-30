@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
-    <link href="normalize.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
 <link rel="icon" href="img/icon.svg" type="img/svg+xml">
@@ -11,8 +11,9 @@
 <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page-body">
-    <header class="main-header">
+     <header class="main-header">
      <nav class="main-navigation">
+      <div class="main_navigation_wrappen">
       <img class="main-header-logo" src="img/nerds-logo.svg" width="160" height="49" alt="Логотип NЁRDS">
      <ul class="site-navigation">
       <li><a href="blank.html">Студия</a></li>
@@ -22,10 +23,11 @@
     </ul>
     <p class="basket-navigation">
        <a  href="blank.html" >Корзина</a></p>
+       </div>
   </nav>
     </header>
    <main class="container">
-  <!--<h1>Интернет магазин «Nerds»</h1>-->
+ <!-- <h1>Интернет магазин «Nerds»</h1>-->
   <section class="features">
    <!--<h2>Преимущества</h2>-->
     <div>
@@ -40,7 +42,7 @@
     <div>
     <p><strong class="main-feature" >Любим математику,<br>
     Как никто другой
-    <p></strong>
+     </strong>
     </p>
     <p class="feature-preview">Никакого креатива, только математические формулы<br>
     для расчета идеальных пропорций</p>
@@ -56,7 +58,8 @@
     <a class="feature-button" href="blank.html">Узнать больше</a>
    </div>
     <img class="feature-img" src="img/tablets.png" width="760" height="431" alt="Презентация Нёрдс-планшеты">
-  </section>
+</section>
+
   <section class="columns">
     <!--<h2>Услуги</h2>-->
     <ul><li class="column-webs">
@@ -82,7 +85,7 @@
     </li>
     </ul>
   </section>
-  <section >
+  <section class="about_wrappen">
     <!--<h2>О нас</h2>-->
   <nav class="about">
     <h2 class="main-about">Мы маленькая, но гордая<br>
@@ -150,8 +153,11 @@
     </p>
     <a class="footer-button" href="blank.html">НАПИШИТЕ НАМ</a></div></div>
   </section>
-  <section class="footer-social">
+
+
+    <section class="footer-social">
     <!--<h2> Социальные сети</h2>-->
+    <div class="footer_wrappen">
     <ul class="social-list">
       <li>
         <a href="#"><img src="img/vkontakte.svg"  width="81" height="81" alt="Логотип Вконтакте"></a>
@@ -163,12 +169,13 @@
         <a href="#"><img src="img/instagram.svg"  width="81" height="81" alt="Логотип Инстаграм"></a>
       </li>
     </ul>
-    <nav class="footer-section" >
+    <div class="footer-section" >
       <p class="footer-desc" ><strong> Давайте дружить, это выгодно!</strong></p>
     <p class="discount">
     Скидка 10% для друзей из социальных сетей.
     </p>
-    </nav>
+    </div>
+  </div>
   </section>
     </footer>
     <!--Модальное окно-->
