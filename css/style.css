@@ -84,6 +84,7 @@ img {
   max-width: 100%;
   height: auto;
   display: flex;
+  /* justify-content: space-between; */
 }
 
 /* Grid */
@@ -96,8 +97,7 @@ img {
 /* main-header */
 .wrapper {
   margin: 0 auto;
-  width: 1140px;
-
+  width: 1440px;
 }
 
 /* main-navigation */
@@ -111,9 +111,10 @@ img {
 .main_navigation_wrappen {
   /*display: grid;
 grid-template-columns: auto 1fr auto;*/
-  padding-top: 50px;
+  padding-top: 47px;
   display: flex;
   margin-bottom: 0px;
+  /* margin-left: 150px; */
 }
 
 .site-navigation,
@@ -129,18 +130,23 @@ grid-template-columns: auto 1fr auto;*/
   margin: 0;
   justify-content: space-between;
 }
+.basket-navigation {
+
+}
 
 .navigation_wrappen {
   display: flex;
-  padding-left: 0px;
+  padding-left: 0;
   margin-left: auto;
-  align-items: center
+  margin-top: 20px;
+  align-items: center;
+  margin-right: auto;
 }
 
 /* user-navigation */
 .site-navigation li {
-  margin-right: 45px;
-
+  /* margin-right: 45px; */
+  padding-left: 50px;
 }
 
 .site-navigation a,
@@ -448,7 +454,7 @@ sup {
   list-style: none;
   margin-top: 0;
   margin-bottom: 0;
-  padding-left: 0;
+  padding-left: 130px;
   display: flex;
 }
 
@@ -559,12 +565,17 @@ sup {
 }
 
 /* catalog */
+.main-header-logo {
+  margin-left: 140px;
+  /* margin-right: 500px; */
+}
 .wrapper_main_page {
   display: grid;
-    grid-column: auto;
-    justify-self: center;
-    padding-top: 87px;
-    padding-bottom: 108px;
+  grid-column: auto;
+  justify-self: center;
+  padding-top: 41px;
+  padding-bottom: 70px;
+  /* padding-left: 0px; */
   background-color: var(--light-gray);
   }
 
@@ -581,8 +592,8 @@ sup {
 
   fieldset {
     border: 0 none;
-    margin: 69px 0px;
-    padding-top: 50px;
+    margin: 50px 0px;
+    /* padding-top: 50px; */
   }
 
   legend {
@@ -604,6 +615,7 @@ sup {
     font-size: 16px;
     line-height: 19px;
     color: var(--dark-gray);
+    margin-top: 35px;
   }
 
   .filter-list:disabled {
@@ -631,6 +643,9 @@ sup {
     color: var(--basic-black);
 
   }
+  .filters {
+    margin-left: 128px;
+}
 
   .catalog__sort-item:hover {
     color: var(--basic-black);
@@ -671,7 +686,7 @@ sup {
   /* products */
   .page_catalog{
     display: grid;
-    grid-template-columns: 260px 760px;
+    grid-template-columns: auto auto;
     justify-content: space-between;
 }
 .wrapper_filter {
@@ -679,31 +694,39 @@ sup {
   grid-template-columns: auto 1fr;
   margin: 50px 0px;
   grid-column-gap: 200px;
+  padding-left: 150px;
+  width: 700px;
   }
 
 
   .catalog_list {
     list-style: none;
-  display: flex;
-  /* display: grid; */
-  flex-wrap: wrap;
-  justify-content: space-between;
-  /* grid-template-columns: 1fr 1fr; */
-  padding-left: 0;
+    display: flex;
+    /* display: grid; */
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    /* grid-template-columns: 1fr 1fr; */
+    margin-left: 150px;
+
   }
 
   .catalog_item {
     background: var(--basic-white);
     border-radius: 5px;
-    width: 320px;
+    width: 350px;
+    margin-right: 50px;
   }
 
   .catalog_modal {
     background-color: var(--light-gray);
     text-align: center;
-    padding-top: 25px;
+    padding: 20px 0px;
   }
-
+.catalog_item:hover,
+.catalog_item:focus {
+box-shadow: 0px 6px 15px rgba(0, 1, 1, 0.25);
+border-radius: 5px;
+}
   .catalog_title {
     font-family: "RobotoBold", sans-serif;
     font-size: 18px;
@@ -711,8 +734,10 @@ sup {
     font-weight: 700;
     color: var(--basic-black);
     text-transform: uppercase;
+
   }
   .title_product {
+
   }
 
   .catalog_title:hover {
@@ -730,19 +755,13 @@ sup {
     line-height: 18px;
     color: var(--medium-gray);
     margin-top: 28px;
-    margin-bottom: 48px;
+    margin-bottom: 25px;
   }
 
   .catalog_button {
-    font-family: "RobotoMedium", sans-serif;
-    line-height: 18px;
-    font-weight: 500;
-    text-align: center;
-    align-items: center;
-    background-color: var(--basic-red);
-    color: var(--basic-white);
-    text-transform: uppercase;
-    padding:10px 20px;
+    padding: 12px 75px;
+    display: inline-block;
+    margin-bottom: 25px;
   }
 
   .catalog_button:hover {
@@ -760,7 +779,8 @@ sup {
     display: flex;
     list-style: none;
     margin-bottom: 60px;
-      margin-top: 50px;
+    margin-top: 50px;
+    margin-left: 140px;
   }
 
   .page-number a {
@@ -770,7 +790,7 @@ sup {
     background-color: var(--light-gray);
     color: var(--basic-black);
     font-weight: 500;
-    padding: 10px 10px;
+    padding: 15px 20px;
     margin-left: 10px;
   }
 
