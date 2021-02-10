@@ -11,23 +11,23 @@
 <link rel="apple-touch-icon" href="apple.png">
 <link rel="manifest" href="manifest.webmanifest">
   </head>
-  <body>
+  <body class="page-body">
     <header class="main-header">
       <div class="wrapper">
-        <nav class="main-navigation">
-        <div class="main_navigation_wrapper" >
-            <a href="index.html"><img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип_NЁRDS"></a>
-            <ul class="site-navigation">
-                <li><a href="blank.html">Студия</a></li>
-                <li><a href="blank.html">Клиенты</a></li>
-                <li><a href="catalog.html">Магазин</a></li>
-                <li><a href="blank.html">Контакты</a></li>
-            </ul>
-          <p class="basket-navigation"><a  href="blank.html" >Корзина</a></p>
-        </div>
-      </nav>
-     </div>
-    </header>
+          <nav class="main-navigation main_navigation_wrappen">
+            <a class="main-header-logo" href="index.html"><img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип_NЁRDS"></a>
+              <ul class="site-navigation navigation_wrappen">
+                  <li><a href="blank.html">Студия</a></li>
+                  <li><a href="blank.html">Клиенты</a></li>
+                  <li><a href="catalog.html">Магазин</a></li>
+                  <li><a href="blank.html">Контакты</a></li>
+              </ul>
+              <p class="basket-navigation navigation_wrappen">
+                  <a href="blank.html">Корзина</a>
+              </p>
+          </nav>
+      </div>
+  </header>
    <main >
       <section  class="wrapper_main_page">
        <h1 class="main_page">Магазин готовых шаблонов</h1>
@@ -175,34 +175,33 @@
     <section class="footer-contacts">
         <div class="wrapper">
             <!--<h2>Как до нас добраться</h2>-->
-            <img src="img/map-marker.png" width="231" height="190" alt="Метка">
+            <!--       <img src="img/map-marker.png" alt="Метка" width="231" height="190">-->
 
             <div class="footer-window">
                 <h3 class="footer-window__title">NЁRDS DESIGN STUDIO</h3>
                 <p class="footer-window__address">
                     191186, Санкт-Петербург,<br>
                     ул. Б.Конюшенная, д.19/8
-                    <br>
+                </p>
+                <p class="">
                     <a class="footer-window__phone" href="tel:+78122757575"> тел.+7 (812) 275-75-75</a>
                 </p>
-                <a class="button button--red footer-window__button" href="blank.html">НАПИШИТЕ НАМ</a>
+                <a class="button button--red write-us" href="blank.html">НАПИШИТЕ НАМ</a>
             </div>
         </div>
     </section>
-
-
     <section class="footer__social">
         <!--<h2> Социальные сети</h2>-->
         <div class="wrapper">
             <ul class="social-list">
                 <li>
-                    <a href="#"><img src="img/vkontakte.svg" width="81" height="81" alt="Логотип Вконтакте"></a>
+                    <a href="#"><img src="img/vkontakte.svg" alt="Логотип Вконтакте" width="81" height="81"></a>
                 </li>
                 <li>
-                    <a href="#"><img src="img/facebook.svg" width="81" height="81" alt="Логотип Фейсбука"></a>
+                    <a href="#"><img src="img/facebook.svg" alt="Логотип Фейсбука" width="81" height="81"></a>
                 </li>
                 <li>
-                    <a href="#"><img src="img/instagram.svg" width="81" height="81" alt="Логотип Инстаграм"></a>
+                    <a href="#"><img src="img/instagram.svg" alt="Логотип Инстаграм" width="81" height="81"></a>
                 </li>
             </ul>
             <div class="footer-section">
@@ -218,22 +217,25 @@
 <section class="modal">
     <h2 class="main-modal">Напишите нам:</h2>
     <form action="https://echo.htmlacademy.ru/" method="post">
-        <nav class="modal-name">
-            <h3>Ваше имя:</h3>
-            <p><input class="modal-name-input" type="text" name="fio" id="fio-field" placeholder="Имя Фамилия"></p>
-        </nav>
-        <nav class="modal-email">
-            <h3>Ваш email:</h3>
-            <p><input class="modal-email-input" name="email" id="email-field" placeholder="email@example.com"></p>
-        </nav>
+        <div class="modal_wrapper">
+            <div class="modal-name">
+                <h3>Ваше имя:</h3>
+                <p><input class="modal-name-input" name="fio" id="fio-field" placeholder="Имя Фамилия" type="text"></p>
+            </div>
+            <div class="modal-email">
+                <h3>Ваш email:</h3>
+                <p><input class="modal-email-input" name="email" id="email-field" placeholder="email@example.com"></p>
+            </div>
+        </div>
     </form>
     <form action="https://echo.htmlacademy.ru/courses" method="post">
-        <nav class="modal-comment">
+        <div class="modal-comment">
             <h3>Текст письма:</h3>
             <p><textarea class="comment" name="comment" id="comment-field" rows="2" placeholder="В свободной форме"></textarea></p>
-        </nav>
-        <input class="modal-button" type="submit" value="Отправить">
+        </div>
+        <input class="button button--red" value="Отправить" type="submit">
     </form>
 </section>
 </body>
+
 </html>
