@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html class="page" lang="ru">
 
 <head>
@@ -17,24 +16,25 @@
     <header class="main-header">
         <div class="wrapper">
             <nav class="main-navigation main_navigation_wrappen">
-                <img class="main-header-logo" src="img/nerds-logo.svg" alt="Логотип NЁRDS" width="160" height="49">
+                <img class="main-header-logo" src="img/nerds-logo.svg" alt="Логотип NЁRDS" width="160" height="65">
                 <ul class="site-navigation navigation_wrappen">
                     <li><a href="blank.html">Студия</a></li>
                     <li><a href="blank.html">Клиенты</a></li>
                     <li><a href="catalog.html">Магазин</a></li>
                     <li><a href="blank.html">Контакты</a></li>
                 </ul>
-                <p class="basket-navigation navigation_wrappen">
-                    <a href="blank.html">Корзина</a>
+                <p class="navigation_wrappen">
+                    <a class="basket-navigation" href="blank.html">Корзина</a>
                 </p>
             </nav>
         </div>
     </header>
     <main class="container">
-        <!-- <h1>Интернет магазин «Nerds»</h1>-->
+         <h1 class="visually-hidden">Интернет магазин «Nerds»</h1>
         <section class="features">
-            <div class="wrapper_features wrapper">
-                <!--<h2>Преимущества</h2>-->
+              <h2 class="visually-hidden">Преимущества</h2>
+              <div class="slider_one slide slide_current">
+                <div class="wrapper_features wrapper">
                 <div class="features_block">
                     <p class="main-feature">
                         Долго, дорого,<br>
@@ -43,32 +43,46 @@
                     <p class="feature-preview">Математически выверенный дизайн<br>
                         для вашего сайта или мобильного приложения.</p><a class="feature_button button button--red" href="blank.html">Узнать больше</a>
                 </div>
-
                 <img class="feature-img" src="img/phones.png" alt="Презентация Нёрдс-смартфоны" width="760" height="431">
-                <!--<div>
+              </div>
+              </div>
+              <div class="slider_two slide">
+                <div class="wrapper_features wrapper">
+                <div class="features_block">
                     <p class="main-feature">Любим математику,<br>
                             Как никто другой
                     </p>
                     <p class="feature-preview">Никакого креатива, только математические формулы<br>
                         для расчета идеальных пропорций</p>
-                    <a class="feature-button" href="blank.html">Узнать больше</a>
-                </div>-->
-                <!--<img class="feature-img" src="img/monitors.png" alt="Презентация Нёрдс-мониторы" width="760" height="431">-->
-                <!--<div>
+                        <a class="feature_button button button--red" href="blank.html">Узнать больше</a>
+                </div>
+                <img class="feature-img" src="img/monitors.png" alt="Презентация Нёрдс-мониторы" width="760" height="431">
+              </div>
+            </div>
+              <div class="slider_three slide">
+                <div class="wrapper_features wrapper">
+                <div class="features_block">
                     <p class="main-feature">Только ночь,<br>
                             только хардкор
                     </p>
                     <p class="feature-preview">Работать днем, как все? Мы против этого.<br>
                         Ближе к полуночи работа только начинается.</p>
-                    <a class="feature-button" href="blank.html">Узнать больше</a>
-                </div>-->
-                <!--<img class="feature-img" src="img/tablets.png" alt="Презентация Нёрдс-планшеты" width="760" height="431">-->
+                      <a class="feature_button button button--red" href="blank.html">Узнать больше</a>
+                </div>
+                <img class="feature-img" src="img/tablets.png" alt="Презентация Нёрдс-планшеты" width="760" height="431">
+                </div>
+              </div>
+            </div>
+            <div class="slider-controls">
+            <button  class="current" type="button_slider" aria-label="Первый слайд"></button>
+          <button type="button_slider" aria-label="Второй слайд"></button>
+          <button type="button_slider" aria-label="Третий слайд"></button>
             </div>
         </section>
 
         <div class="wrapper">
             <section class="columns">
-                <!--<h2>Услуги</h2>-->
+              <h2 class="visually-hidden">Услуги</h2>
                 <ul class="columns__list">
                     <li class="columns__inner">
                         <img class="columns__img" src="img/webs.jpg" alt="ВЕБ-САЙТЫ" width="300" height="146">
@@ -95,7 +109,7 @@
             </section>
 
             <section class="about-us">
-                <!--<h2>О нас</h2>-->
+              <h2 class="visually-hidden">О нас</h2>
                 <div class="about">
                     <h2 class="main-about">Мы маленькая, но гордая<br>
                         дизайн-студия из Краснодара.
@@ -107,9 +121,9 @@
                         Выполняем заказы на разработку:
                     </h3>
                     <ul class="about-list">
-                        <li> Веб-сайтов любой сложности</li>
-                        <li>Мобильных приложений для iOS и Android</li>
-                        <li>Слайдшоу и видео для корпоративных презентаций</li>
+                        <li class="about_item"> Веб-сайтов любой сложности</li>
+                        <li class="about_item">Мобильных приложений для iOS и Android</li>
+                        <li class="about_item">Слайдшоу и видео для корпоративных презентаций</li>
                     </ul>
                 </div>
 
@@ -134,19 +148,19 @@
             </section>
 
             <section class="partners">
-                <!--<h2>Наши партнеры</h2>-->
+                <h2 class="visually-hidden">Наши партнеры</h2>
                 <ul class="partners__list">
                     <li>
-                        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htlmacademy.svg" alt="Логотип HTML Academy" width="199" height="69"></a>
+                        <a  href="https://htmlacademy.ru/intensive/htmlcss"><img class ="partner_item" src="img/logo-htlmacademy.svg" alt="Логотип HTML Academy" width="199" height="69"></a>
                     </li>
                     <li>
-                        <a href="#"><img src="img/logo-borodinski.svg" alt="Логотип Барбершоп Бородинский" width="199" height="68"></a>
+                        <a  href="#"><img class ="partner_item" src="img/logo-borodinski.svg" alt="Логотип Барбершоп Бородинский" width="199" height="68"></a>
                     </li>
                     <li>
-                        <a href="#"><img src="img/logo-pink.svg" alt="Логотип Пинк" width="199" height="68"></a>
+                        <a class ="partner_item" href="#"><img class ="partner_item" src="img/logo-pink.svg" alt="Логотип Пинк" width="199" height="68"></a>
                     </li>
                     <li>
-                        <a href="#"><img src="img/logo-mishca.svg" alt="Логотип Мишка" width="199" height="68"></a>
+                        <a href="#"><img class ="partner_item" src="img/logo-mishca.svg" alt="Логотип Мишка" width="199" height="68"></a>
                     </li>
                 </ul>
             </section>
@@ -155,7 +169,7 @@
     <footer class="main-footer map">
         <section class="footer-contacts">
             <div class="wrapper">
-                <!--<h2>Как до нас добраться</h2>-->
+            <h2 class="visually-hidden">Как до нас добраться</h2>
                 <!--       <img src="img/map-marker.png" alt="Метка" width="231" height="190">-->
 
                 <div class="footer-window">
@@ -172,7 +186,7 @@
             </div>
         </section>
         <section class="footer__social">
-            <!--<h2> Социальные сети</h2>-->
+            <h2 class="visually-hidden"> Социальные сети</h2>
             <div class="wrapper">
                 <ul class="social-list">
                     <li>
@@ -202,7 +216,7 @@
     </footer>
     <!--Модальное окно-->
     <section class="modal">
-        <h2 class="main-modal">Напишите нам:</h2>
+        <h2 class="main-modal">Напишите нам</h2>
         <form action="https://echo.htmlacademy.ru/" method="post">
             <div class="modal_wrapper">
                 <div class="modal-name">
@@ -220,7 +234,7 @@
                 <h3>Текст письма:</h3>
                 <p><textarea class="comment" name="comment" id="comment-field" rows="2" placeholder="В свободной форме"></textarea></p>
             </div>
-            <input class="button button--red" value="Отправить" type="submit">
+            <input class="button button_modal button--red" value="Отправить" type="submit">
         </form>
     </section>
 </body>
