@@ -8,7 +8,7 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="img/icon.svg" type="img/svg+xml">
+    <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="apple.png">
     <link rel="manifest" href="manifest.webmanifest">
     <base href="https://htmlacademy-htmlcss.github.io/1695107-nerds-30/7/">
@@ -75,9 +75,9 @@
                 </div>
               </div>
             <div class="slider-controls">
-            <button  class="current" type="button_slider" aria-label="Первый слайд"></button>
-          <button type="button_slider" aria-label="Второй слайд"></button>
-          <button type="button_slider" aria-label="Третий слайд"></button>
+            <button  class="current button_slider" aria-label="Первый слайд"></button>
+          <button class="button_slider" aria-label="Второй слайд"></button>
+          <button class="button_slider" aria-label="Третий слайд"></button>
             </div>
           </section>
         <div class="wrapper">
@@ -126,13 +126,13 @@
                         <li class="about_item">Слайдшоу и&nbsp;видео для корпоративных презентаций</li>
                     </ul>
                 </div>
-
                 <div class="about-content">
                     <img class="content-logo" src="img/nerds-logo.png" alt="Логотип NЁRDS с цветным оформлением" width="360" height="208">
                     <p class="content-aside">
                         <b>С&nbsp;2004 года любим точность во&nbsp;всем:</b>
                     </p>
                     <section class="about-section">
+                      <h3 class="visually-hidden">Статистика</h3>
                         <div class="procent">
                             <p>146<sup>%</sup></p>
                             <p>100<sup>%</sup></p>
@@ -153,13 +153,13 @@
                       <a href="https://htmlacademy.ru/intensive/htmlcss"><img class="partner_item" src="img/logo-htlmacademy.svg" alt="Логотип HTML Academy" width="199" height="69"></a>
                   </li>
                   <li>
-                      <a href="#"><img class="partner_item" src="img/logo-borodinski.svg" alt="Логотип Барбершоп Бородинский" width="199" height="68"></a>
+                      <a href="#"><img class="partner_item" src="img/logo-borodinski.svg" alt="Логотип Барбершоп Бородинский" width="209" height="90"></a>
                   </li>
                   <li>
-                      <a class="partner_item" href="#"><img class="partner_item" src="img/logo-pink.svg" alt="Логотип Пинк" width="199" height="68"></a>
+                      <a href="#"><img class="partner_item" src="img/logo-pink.svg" alt="Логотип Пинк" width="185" height="52"></a>
                   </li>
                   <li>
-                      <a href="#"><img class="partner_item" src="img/logo-mishca.svg" alt="Логотип Мишка" width="199" height="68"></a></li>
+                      <a href="#"><img class="partner_item" src="img/logo-mishca.svg" alt="Логотип Мишка" width="173" height="84"></a></li>
                       </ul>
                        </section></div>
 
@@ -212,30 +212,29 @@
             </div>
         </section>
     </footer>
-    <!--Модальное окно-->
-    <section class="modal">
-        <h2 class="main-modal">Напишите нам</h2>
-        <form action="https://echo.htmlacademy.ru/" method="post">
-            <div class="modal_wrapper">
-                <div class="modal-name">
-                    <h3>Ваше имя:</h3>
-                    <p><input class="modal-name-input" name="fio" id="fio-field" placeholder="Имя Фамилия" type="text"></p>
-                </div>
-                <div class="modal-email">
-                    <h3>Ваш email:</h3>
-                    <p><input class="modal-email-input" name="email" id="email-field" placeholder="email@example.com"></p>
-                </div>
+   <!--Модальное окно-->
+   <!--Модальное окно-->
+   <section class="modal">
+    <h2 class="main-modal">Напишите нам</h2>
+    <form action="https://echo.htmlacademy.ru/" method="post">
+        <div class="modal_wrapper">
+            <div class="modal-name">
+                <h3>Ваше имя:</h3>
+                <p><input class="modal-name-input" name="fio" id="fio-field" placeholder="Имя Фамилия" type="text"></p>
             </div>
-        </form>
-        <form action="https://echo.htmlacademy.ru/courses" method="post">
-            <div class="modal-comment">
-                <h3>Текст письма:</h3>
-                <p><textarea class="comment" name="comment" id="comment-field" rows="2" placeholder="В свободной форме"></textarea></p>
+            <div class="modal-email">
+                <h3>Ваш email:</h3>
+                <p><input class="modal-email-input" name="email" id="email-field" placeholder="email@example.com"></p>
             </div>
-            <input class="button button_modal button--red" value="Отправить" type="submit">
-        </form>
-        <button class="modal-close" type="button" aria-label="Закрыть"></button>
-    </section>
+        </div>
+        <div class="modal-comment">
+            <h3>Текст письма:</h3>
+            <p><textarea class="comment" name="comment" id="comment-field" rows="2" placeholder="В свободной форме"></textarea></p>
+        </div>
+        <input class="button button_modal button--red" value="Отправить" type="submit">
+    </form>
+    <button class="modal-close" type="button" aria-label="Закрыть"></button>
+</section>
 </body>
 </html>
 
