@@ -5,7 +5,6 @@ const modalForm = modalPopup.querySelector(".modal-form");
 const modalName = modalPopup.querySelector(".modal-name-input");
 const modalEmail = modalPopup.querySelector(".modal-email-input");
 
-
 let isStorageSupport = true;
 let storageName = "";
 let storageEmail = "";
