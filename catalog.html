@@ -44,8 +44,8 @@
                            <div class="scale">
                               <div class="bar"></div>
                            </div>
-                           <div class="toggle toggle-min" tabindex="0"></div>
-                           <div class="toggle toggle-max" tabindex="0"></div>
+                           <div class="toggle toggle-min" role="img" aria-label="Переключатель, показавющий минимальную стоимость" tabindex="0"></div>
+                           <div class="toggle toggle-max" role="img" aria-label="Переключатель, показавющий миакстиальную стоимость" tabindex="0"></div>
                         </div>
                         <div class="price-controls">
                            <label class="min-price">
@@ -117,12 +117,15 @@
                         <a class="catalog__sort-item" href="blank.html">По названию</a>
                      </li>
                      <li class="list_icon_nav">
+                      <a href="#">
                         <svg class="icon_dir" role="img" aria-label="Иконка, листающая сортировку вниз" width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                            <path d="M5.5 10L0 0H11" fill="#231F20"></path>
                         </svg>
+                        </a>
+                        <a href="#">
                         <svg class="catalog__sort-item icon_up" role="img" aria-label="Иконка, листающая сортировку вверх" width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                            <path d="M5.5 0L0 10H11L5.5 0Z" fill="#231F20"></path>
-                        </svg>
+                        </svg></a>
                      </li>
                   </ul>
                </div>
@@ -294,26 +297,26 @@
       </footer>
       <!--Модальное окно-->
       <section class="modal">
-         <h2 class="main-modal">Напишите нам</h2>
-         <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
-            <div class="modal_wrapper">
-               <div class="modal-name">
-                  <h3>Ваше имя:</h3>
-                  <p><input class="modal-name-input" name="fio" id="fio-field" placeholder="Имя Фамилия" type="text"></p>
-               </div>
-               <div class="modal-email">
-                  <h3>Ваш email:</h3>
-                  <p><input class="modal-email-input" name="email" id="email-field" placeholder="email@example.com"></p>
-               </div>
-            </div>
-            <div class="modal-comment">
-               <h3>Текст письма:</h3>
-               <p><textarea class="comment" name="comment" id="comment-field" rows="2" placeholder="В свободной форме"></textarea></p>
-            </div>
-            <input class="button button_modal button--red" value="Отправить" type="submit">
-         </form>
-         <button class="modal-close" type="button" aria-label="Закрыть"></button>
-      </section>
-      <script src="js/script.modal.min.js"></script>
-   </body>
+        <h2 class="main-modal">Напишите нам</h2>
+        <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+           <div class="modal_wrapper">
+              <div class="modal-name">
+                 <p class="modal-text"><label for="fio-field">Ваше имя:</label>
+                 <input class="modal-name-input" name="fio" id="fio-field" placeholder="Имя Фамилия" type="text"></p>
+              </div>
+              <div class="modal-email">
+               <p class="modal-text"><label for="email-field">Ваш email:</label>
+                 <input class="modal-email-input" name="email" id="email-field" placeholder="email@example.com"></p>
+              </div>
+           </div>
+           <div class="modal-comment">
+             <p class="modal-text"><label for="comment-field">Текст письма:</label>
+              <textarea class="comment" name="comment" id="comment-field" rows="2" placeholder="В свободной форме"></textarea></p>
+           </div>
+           <input class="button button_modal button--red" value="Отправить" type="submit">
+        </form>
+        <button class="modal-close" type="button" aria-label="Закрыть"></button>
+     </section>
+     <script src="js/script.modal.min.js"></script>
+  </body>
 </html>

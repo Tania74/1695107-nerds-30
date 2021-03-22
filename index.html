@@ -225,17 +225,17 @@
          <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="modal_wrapper">
                <div class="modal-name">
-                  <h3>Ваше имя:</h3>
-                  <p><input class="modal-name-input" name="fio" id="fio-field" placeholder="Имя Фамилия" type="text"></p>
+                  <p class="modal-text"><label for="fio-field">Ваше имя:</label>
+                  <input class="modal-name-input" name="fio" id="fio-field" placeholder="Имя Фамилия" type="text"></p>
                </div>
                <div class="modal-email">
-                  <h3>Ваш email:</h3>
-                  <p><input class="modal-email-input" name="email" id="email-field" placeholder="email@example.com"></p>
+                <p class="modal-text"><label for="email-field">Ваш email:</label>
+                  <input class="modal-email-input" name="email" id="email-field" placeholder="email@example.com"></p>
                </div>
             </div>
             <div class="modal-comment">
-               <h3>Текст письма:</h3>
-               <p><textarea class="comment" name="comment" id="comment-field" rows="2" placeholder="В свободной форме"></textarea></p>
+              <p class="modal-text"><label for="comment-field">Текст письма:</label>
+               <textarea class="comment" name="comment" id="comment-field" rows="2" placeholder="В свободной форме"></textarea></p>
             </div>
             <input class="button button_modal button--red" value="Отправить" type="submit">
          </form>
